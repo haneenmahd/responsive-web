@@ -148,5 +148,4 @@ const QUERIES = {
     TV: `and (min-device-width : 1201px)`
 }
 
-export { QUERIES };
-export default QUERIES;
+module.exports = QUERIES;

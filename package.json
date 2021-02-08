@@ -1,10 +1,13 @@
 {
-  "name": "responsive-web",
-  "version": "1.0.0",
+  "name": "@haneenmahd/responsive-web",
+  "version": "1.0.1",
   "description": "Media queries inside your styled component.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "git://github.com/haneenmahd/responsive-web.git"
   },
   "keywords": [
     "media",
@@ -21,8 +24,5 @@
     "size"
   ],
   "author": "Haneen Mahdin",
-  "license": "MIT",
-  "dependencies": {
-    "user": "0.0.0"
-  }
+  "license": "MIT"
 }
