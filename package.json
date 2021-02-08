@@ -1,0 +1,25 @@
+{
+  "name": "queries",
+  "version": "1.0.0",
+  "description": "Media queries inside your styled component.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "media",
+    "screen",
+    "mobile",
+    "responsive",
+    "grid",
+    "flexbox",
+    "tablet",
+    "laptop",
+    "media-queries",
+    "device",
+    "machines",
+    "size"
+  ],
+  "author": "Haneen Mahdin",
+  "license": "MIT"
+}
