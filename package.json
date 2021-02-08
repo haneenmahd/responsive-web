@@ -1,5 +1,5 @@
 {
-  "name": "queries",
+  "name": "responsive-web",
   "version": "1.0.0",
   "description": "Media queries inside your styled component.",
   "main": "index.js",
@@ -21,5 +21,8 @@
     "size"
   ],
   "author": "Haneen Mahdin",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "user": "0.0.0"
+  }
 }
