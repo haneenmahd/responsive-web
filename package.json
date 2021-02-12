@@ -1,6 +1,6 @@
 {
-  "name": "@haneenmahd/responsive-web",
-  "version": "1.0.1",
+  "name": "responsive-web",
+  "version": "1.0.2",
   "description": "Media queries inside your styled component.",
   "main": "index.js",
   "scripts": {
