@@ -1,4 +1,11 @@
 const QUERIES = {
+    // Basic Devices
+    MOBILE: `and (min-device-width : 320px) and (max-device-width : 480px)`,
+    TABLET: `and (min-device-width : 481px) and (max-device-width : 768px)`,
+    LAPTOP: `and (min-device-width : 769px) and (max-device-width : 1024px)`,
+    DESKTOP: `and (min-device-width : 1025px) and (max-device-width : 1200px)`,
+    TV: `and (min-device-width : 1201px)`,
+    // Sized Based on Device models
     iOS: {
         FOUR: {
             LANDSCAPE: `and (min-device-width: 320px) 
@@ -141,11 +148,7 @@ const QUERIES = {
                  and (-webkit-min-device-pixel-ratio: 2)
                  and (min-resolution: 192dpi)`
     },
-    MOBILE: `and (min-device-width : 320px) and (max-device-width : 480px)`,
-    TABLET: `and (min-device-width : 481px) and (max-device-width : 768px)`,
-    LAPTOP: `and (min-device-width : 769px) and (max-device-width : 1024px)`,
-    DESKTOP: `and (min-device-width : 1025px) and (max-device-width : 1200px)`,
-    TV: `and (min-device-width : 1201px)`
-}
+};
 
-module.exports = QUERIES;
+export { QUERIES };
+export default QUERIES;
