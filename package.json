@@ -1,13 +1,17 @@
 {
-  "name": "responsive-web",
-  "version": "1.0.2",
+  "name": "@haneenmahd/responsive-web",
+  "version": "1.0.3",
   "description": "Media queries inside your styled component.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "url": "git://github.com/haneenmahd/responsive-web.git"
+    "type": "git",
+    "url": "git@github.com:haneenmahd/responsive-web.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "media",

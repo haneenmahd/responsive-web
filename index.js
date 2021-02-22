@@ -1,4 +1,4 @@
-const QUERIES = {
+module.exports =  {
     // Basic Devices
     MOBILE: `and (min-device-width : 320px) and (max-device-width : 480px)`,
     TABLET: `and (min-device-width : 481px) and (max-device-width : 768px)`,
@@ -149,6 +149,3 @@ const QUERIES = {
                  and (min-resolution: 192dpi)`
     },
 };
-
-export { QUERIES };
-export default QUERIES;
