@@ -1,0 +1,1 @@
+{"version":3,"file":"getWindowHeight.js","sourceRoot":"","sources":["../../lib/getWindowHeight.ts"],"names":[],"mappings":";;AAAA;;GAEG;AACH,SAAS,eAAe;IACpB,MAAM,CAAC,gBAAgB,CAAC,QAAQ,EAAE,GAAG,EAAE;QACnC,OAAO,MAAM,CAAC,MAAM,CAAC,WAAW,CAAC;IACrC,CAAC,CAAC,CAAC;IACH,OAAO,MAAM,CAAC,MAAM,CAAC,WAAW,CAAC;AACrC,CAAC;AAAA,CAAC;AAEF,kBAAe,eAAe,CAAC"}

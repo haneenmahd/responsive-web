@@ -1,9 +1,17 @@
-import getWindowHeight from "./lib/getWindowHeight";
-import getWindowWidth from "./lib/getWindowWidth";
-import { getWindowScrollPosX, getWindowScrollPosY } from "./lib/getWindowScrollPos";
-import useScrollTo from "./lib/useScrollTo";
-import useScrollBy from "./lib/useScrollBy";
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.QUERIES = exports.getWindowWidth = exports.getWindowHeight = exports.getWindowScrollPosY = exports.getWindowScrollPosX = exports.useScrollTo = exports.useScrollBy = void 0;
+const getWindowHeight_1 = require("./lib/getWindowHeight");
+exports.getWindowHeight = getWindowHeight_1.default;
+const getWindowWidth_1 = require("./lib/getWindowWidth");
+exports.getWindowWidth = getWindowWidth_1.default;
+const getWindowScrollPos_1 = require("./lib/getWindowScrollPos");
+Object.defineProperty(exports, "getWindowScrollPosX", { enumerable: true, get: function () { return getWindowScrollPos_1.getWindowScrollPosX; } });
+Object.defineProperty(exports, "getWindowScrollPosY", { enumerable: true, get: function () { return getWindowScrollPos_1.getWindowScrollPosY; } });
+const useScrollTo_1 = require("./lib/useScrollTo");
+exports.useScrollTo = useScrollTo_1.default;
+const useScrollBy_1 = require("./lib/useScrollBy");
+exports.useScrollBy = useScrollBy_1.default;
 const QUERIES = {
     // Basic Devices
     default: {
@@ -157,9 +165,6 @@ const QUERIES = {
                  and (min-resolution: 192dpi)`
     },
 };
-
-export { useScrollBy, useScrollTo };
-export { getWindowScrollPosX, getWindowScrollPosY };
-export { getWindowHeight, getWindowWidth };
-export { QUERIES };
-export default QUERIES;
+exports.QUERIES = QUERIES;
+exports.default = QUERIES;
+//# sourceMappingURL=index.js.map

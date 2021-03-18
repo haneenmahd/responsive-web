@@ -11,21 +11,19 @@
 # Installation
 ### Using npm
 ```
-npm install queries
+npm install @haneenmahd/responsive-web
 ```
 ### Using yarn
 ```
-yarn add queries
+yarn add @haneenmahd/responsive-web
 ```
 # How to Use
-NOTE: This can be only done using ``styled components``.
-## React App
-### Example
-```js
+Example:
+```jsx
 import React from "react";
 import styled from "styled-components";
 import { Colors } from "apple-colors";
-import QUERIES from "responsive-web";
+import QUERIES, { getWindowHeight, getWindowWidth, getWindowScrollPosX, getWindowScrollPosY, useScrollBy, useScrollTo } from "responsive-web";
 
 const Wrapper = styled.div`
   height: 300px;
@@ -53,58 +51,27 @@ const Paragraph = styled.p`
   }
 `;
 
-const MyDeviceQuery = () => (
+const MyDeviceQuery = () => {
+  const windowWidth = getWindowWidth();
+  const windowHeight = getWindowHeight();
+  const windowScrollPos = getWindowScrollPos();
+  return (
     <Wrapper>
-     <Header>Hello World</Header> 
+     <Header>Hello World</Header>
+     {windowWidth > 550 && <p>Hello! Window width greater than 550px</p>} 
+     {windowHeight > 500 && <p>Hello! Window height greater than 500px</p>}
+     <p>Scroll amount x: {getWindowScrollX()}</p>
+     <p>Scroll amount y: {getWindowScrollY()}</p>
      <Paragraph>
      I am using queries to make my website responsive.
      </Paragraph>
+     <button onclick={useScrollBy(20, 50)}>Scroll by</button>
+     <button onclick={useScrollTo(0, 50)}>Scroll To</button>
     </Wrapper>
-)
-```
-
-## Vue App
-You need to install ``vue-styled-components``
-```js
-<template>
- <Wrapper>
-   <Header>
-    Hello Responsive Website
-   </Header>
- </Wrapper>
-</template>
-<script>
-import styled from "vue-styled-components";
-import QUERIES from "responsive-web";
-
-const Wrapper = styled.div`
-  height: 300px;
-  width: 300px;
-  padding: 1.5rem 2rem;
-  border-radius: 1rem;
-  background: ${Colors.iOS.Light.Grey1};
-  @media screen and (${QUERIES.MOBILE}) {
-      background: ${Colors.iOS.Light.Grey1};
-
-  }
-`;
-const Header = styled.h1`
-  font-size: 25px;
-  color: #fff;
-  @media screen and (${QUERIES.MOBILE}) {
-      font-size: 18px;
-  }
-`;
-
-export default {
-    ...name,
-    components: {
-        Wrapper,
-        Header
-    }
+  );
 }
-</script>
 ```
+
 
 ## Available Sizes
 ### Default:
@@ -165,7 +132,7 @@ export default {
 - RETINA (Devices Which have Retina display)
 
 # Developer
-Haneen Mahdin
+## Haneen Mahdin
 
 Follow me on:
 - [Instagram](https://instagram.com/haneenmahdin)
