@@ -1,10 +1,16 @@
-module.exports =  {
+import getWindowHeight from "./lib/getWindowHeight";
+import getWindowWidth from "./lib/getWindowWidth";
+import { getWindowScrollPosX, getWindowScrollPosY } from "./lib/getWindowScrollPos";
+
+const QUERIES = {
     // Basic Devices
-    MOBILE: `and (min-device-width : 320px) and (max-device-width : 480px)`,
-    TABLET: `and (min-device-width : 481px) and (max-device-width : 768px)`,
-    LAPTOP: `and (min-device-width : 769px) and (max-device-width : 1024px)`,
-    DESKTOP: `and (min-device-width : 1025px) and (max-device-width : 1200px)`,
-    TV: `and (min-device-width : 1201px)`,
+    default: {
+        MOBILE: `and (min-device-width : 320px) and (max-device-width : 480px)`,
+        TABLET: `and (min-device-width : 481px) and (max-device-width : 768px)`,
+        LAPTOP: `and (min-device-width : 769px) and (max-device-width : 1024px)`,
+        DESKTOP: `and (min-device-width : 1025px) and (max-device-width : 1200px)`,
+        TV: `and (min-device-width : 1201px)`,
+    },
     // Sized Based on Device models
     iOS: {
         FOUR: {
@@ -149,3 +155,8 @@ module.exports =  {
                  and (min-resolution: 192dpi)`
     },
 };
+
+export { getWindowScrollPosX, getWindowScrollPosY };
+export { getWindowHeight, getWindowWidth };
+export { QUERIES };
+export default QUERIES;
