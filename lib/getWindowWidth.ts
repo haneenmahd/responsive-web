@@ -9,4 +9,3 @@ function getWindowWidth(): number {
 };
 
 export default getWindowWidth;
-

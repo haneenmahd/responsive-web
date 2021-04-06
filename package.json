@@ -1,7 +1,7 @@
 {
   "name": "@haneenmahd/responsive-web",
-  "version": "1.0.3",
-  "description": "Media queries inside your styled component.",
+  "version": "1.0.4",
+  "description": "Media queries inside your Components.",
   "main": "index.js",
   "scripts": {
     "test": "echo no script found!"
