@@ -1,8 +1,9 @@
-# QUERIES 
+# @haneenmahd/responsive-web 
+A Simple npm package for using responsive media screen sizes in your web app.
+
 ![Node.js Package](https://github.com/haneenmahd/responsive-web/workflows/Node.js%20Package/badge.svg)
 ![Node.js CI](https://github.com/haneenmahd/responsive-web/workflows/Node.js%20CI/badge.svg)
 
-## A Simple npm package for using responsive media screen sizes in your web app.
 ## Now a Easier way to use media queries in your 
  - Easy to use
  - Media screen sizes are completely made accurate for devices
